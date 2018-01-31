@@ -1,4 +1,64 @@
-.a{background-color: blue;}
-.b{background-color: white;}
-.c{background-color: red;}
-.img{width: 100%;max-width: 500px;}
+html{
+	font-size: 1.6rem;
+	background-image: url("img/bg.jpg");
+	color: white;
+}
+
+h1{
+	font-size: 8vw;
+}
+
+.tableau,table, tr, td, th{
+	
+	margin: auto;
+}
+
+/*
+.a{
+	background-color: blue;
+}
+
+.b{
+	background-color: white;
+}
+
+.c{
+	background-color: red;
+}
+*/
+.img{
+	width: 100%;max-width: 500px;
+}
+
+.logo{
+	width: 300px; height:137px;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td, th, tr{
+	border: 1px solid white;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1) {
+	.logo{background: url(img/logo-iut1.jpg) no-repeat 0 0;}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+	.logo{
+		background: url(img/logo-iut2.jpg) no-repeat 0 0;
+		background-size: 100%;
+	}
+}
+
+@media screen and (max-width: 1361px){
+	td, th, tr{
+		display: block;
+	}
+	.tableau,table, tr, td, th{
+		width: 100%;
+		text-align: center;
+	}
+}
